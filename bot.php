@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $chatId = '1025254565';
 
         $mensagem = urlencode($conteudo);
-        $url = "https://api.telegram.org/bot{7364923493:AAHPAJU5p9fANMFVbPg0_g_7lR0zg9dpZSM}/sendMessage?chat_id={$chatId}&text={$mensagem}";
+        $url = "https://api.telegram.org/bot{$botToken"}/sendMessage?chat_id={$chatId}&text={$mensagem}";
 
         $response = file_get_contents($url);
 
